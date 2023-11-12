@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/gris"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:menu="@menu/menu_relative_layout"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/AlturaCompRL"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/nombre"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextApellido"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/AlturaCompRL"
+        android:layout_below="@+id/editTextNombre"
+        android:layout_marginHorizontal="24dp"
+        android:hint="@string/Apellidos"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textView_EC"
+        android:layout_width="170dp"
+        android:layout_height="@dimen/AlturaCompRL"
+        android:layout_below="@+id/editTextApellido"
+        android:layout_marginStart="24dp"
+        android:gravity="bottom"
+        android:text="@string/estado"
+        android:textColor="@color/material_dynamic_neutral50"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/textView_Ca"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/AlturaCompRL"
+        android:layout_below="@+id/editTextApellido"
+        android:layout_marginEnd="24dp"
+        android:layout_toEndOf="@+id/textView_EC"
+        android:gravity="bottom"
+        android:text="@string/cargo"
+        android:textColor="@color/material_dynamic_neutral50"
+        android:textSize="19sp" />
+
+    <Spinner
+        android:id="@+id/sp1"
+        android:layout_width="170sp"
+        android:layout_height="@dimen/AlturaCompRL"
+        android:layout_below="@+id/textView_EC"
+        android:layout_marginStart="24dp" />
+
+    <Spinner
+        android:id="@+id/sp2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/AlturaCompRL"
+        android:layout_below="@+id/textView_Ca"
+        android:layout_marginEnd="24dp"
+        android:layout_toEndOf="@+id/sp1" />
+
+</RelativeLayout>

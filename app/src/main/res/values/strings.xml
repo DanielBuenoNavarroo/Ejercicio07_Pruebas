@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Crazy Layouts</string>
+
+    <!--Strings usados en relativeLayout-->
+
+    <string name="nombre">Nombres</string>
+    <string name="Apellidos">Apellidos</string>
+    <string name="estado">Estado Civil</string>
+    <string name="cargo">Cargo</string>
+    <string name="LL">Linear Layout</string>
+    <string name="TL">Table Layout</string>
+    <string name="GL">Grid Layout</string>
+
+    <!--Arrays para spinners-->
+    <string-array name="estados">
+        <item>Soltero</item>
+        <item>Casado</item>
+        <item>Separado</item>
+        <item>Viudo</item>
+    </string-array>
+    <string-array name="ocupacion">
+        <item>Ventas</item>
+        <item>Informatica</item>
+        <item>Jardineria</item>
+    </string-array>
+</resources>
